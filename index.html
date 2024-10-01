@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ef4d06acb6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+    body {
+        background: #FFEFEF;
+    }
+    @media (min-width: 576px) {
+            #responsive-bg {
+                background-color: white;
+            }
+        }
+
+
+        @media (max-width: 575.98px) {
+            #responsive-bg {
+                background-color: #FFEFEF;
+            }
+        }
+
+        /* toggler colour */
+    .navbar-toggler {
+        border-color: red;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="red" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); 
+    }
+
+    /* footer */
+    .foot-main {
+        margin-top: 210px;
+        box-shadow : 0px -4px 25px 0px #00000040;
+    }
+    .foot-sub {
+        position: absolute;
+        top: -5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 4px 25px 0px #00000040;
+    }
+</style>
+
+</head>
+<body>
+    
+
+
+<!-- nav bar -->
+<div class="bg-white">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+          <a class="d-flex text-decoration-none" href="##">
+          <img class=" mt-3" src="img/Logo.png" alt="logo" style="width: 80%;">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item me-5">
+            <a class="nav-link  fs-5 fw-bold"  href="###">Home</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link  active fs-5 fw-bold" href="###">Travel Package</a>
+          </li>
+          <li class="nav-item me-5">
+            <a class="nav-link fs-5 fw-bold" href="###">About Us</a>
+          </li>
+          
+          <li class="nav-item me-5">
+            <a class="nav-link fs-5 fw-bold" href="###">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+    </div>
+
+    <!-- header -->
+    <div class="position-relative" >
+        <img class="w-100 " src="img/beach.png" alt="Tropical Header" style="min-height: 180px;">
+        <div class=" position-absolute top-50 start-50 text-white translate-middle fs-1 fw-bold text-center">Travel Package Details</div>
+    </div>
+
+    <!-- white container -->
+     <div class="container  p-5 rounded  mt-5 " id="responsive-bg">
+        <div class="row justify-content-center">
+            <!-- left side -->
+            <div class="col-md-10 col-lg-7">
+
+                <!-- package details -->
+                <h2 class="mb-1 text-primary-emphasis" style="font-size: 32px;">Package Name <i class="fa-solid fa-share-nodes ms-2 fs-3"></i> </h2>
+                <p class="h5 text-danger">Rs. XXXX / Per Couple</p>
+                <p class="text-muted text-primary-emphasis fw-bold"><i class="fa-regular fa-clock me-2"></i>4 Nights & 5 Days</p>
+                <p class="text-muted" style="text-align: justify;">Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi.
+                   Et eligendi sint ab cumque veritatis aut provident aliquam. Aut aspernatur consequuntur eum quaerat distinctio ut inventore aliquid et quasi alias ut rerum suscipit et nihil deleniti. Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt? 
+                   Quo quidem neque iste expedita est dolor similique ut quasi maxime ut deserunt autem At praesentium voluptatem aut libero nisi. Et eligendi sint ab cumque veritatis aut provident aliquam. 
+                  Aut aspernatur consequuntur eum quaerat distinctio ut inventore aliquid et quasi alias ut rerum suscipit et nihil deleniti.</p>
+                  
+
+                <!-- tour plan -->
+                <div class="container mb-5 ps-3">
+                    <h2 class="mb-3 text-primary-emphasis">Tour Plan</h2>
+
+                      <!-- Day 1 -->
+                      <div class="row ">
+                        <div class="col-1 d-flex flex-column align-items-center">
+                            <div class=" p-2 bg-danger text-white rounded-3 text-center fs-5">01</div>
+                            <div>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font-weight-bold text-danger">Day 1: Jaffna</h5>
+                            <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
+                            <ul class="">
+                                <li>5 Star Accommodation</li>
+                                <li>Breakfast, Lunch, Dinner</li>
+                                <li>Car</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+    
+                    <!-- Day 2 -->
+                    <div class="row ">
+                        <div class="col-1 d-flex flex-column align-items-center">
+                            <div class=" p-2 bg-danger text-white rounded-3 text-center fs-5">02</div>
+                            <div>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font-weight-bold text-danger">Day 2: Jaffna</h5>
+                            <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
+                            <ul class="">
+                                <li>5 Star Accommodation</li>
+                                <li>Breakfast, Lunch, Dinner</li>
+                                <li>Car</li>
+                            </ul>
+                        </div>
+                      </div>
+                  
+                      <!-- Day 3 -->
+                      <div class="row ">
+                        <div class="col-1 d-flex flex-column align-items-center">
+                            <div class=" p-2 bg-danger text-white rounded-3 text-center fs-5">03</div>
+                            <div>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font-weight-bold text-danger">Day 3: Jaffna</h5>
+                            <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
+                            <ul class="">
+                                <li>5 Star Accommodation</li>
+                                <li>Breakfast, Lunch, Dinner</li>
+                                <li>Car</li>
+                            </ul>
+                        </div>
+                      </div>
+                  
+                      <!-- Day 4 -->
+                      <div class="row ">
+                        <div class="col-1 d-flex flex-column align-items-center">
+                            <div class=" p-2 bg-danger text-white rounded-3 text-center fs-5">04</div>
+                            <div>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                                <p class="text-danger mb-0" style="font-size: 10px;">|</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font-weight-bold text-danger">Day 4: Jaffna</h5>
+                            <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
+                            <ul class="">
+                                <li>5 Star Accommodation</li>
+                                <li>Breakfast, Lunch, Dinner</li>
+                                <li>Car</li>
+                            </ul>
+                        </div>
+                      </div>
+              
+                      <!-- Day 5 -->
+                      <div class="row ">
+                        <div class="col-1 d-flex flex-column align-items-center">
+                            <div class=" p-2 bg-danger text-white rounded-3 text-center fs-5">05</div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font-weight-bold text-danger">Day 5: Jaffna</h5>
+                            <div>Jaffna | Jaffna | Jaffna | Jaffna | Jaffna</div>
+                            <ul class="">
+                                <li>5 Star Accommodation</li>
+                                <li>Breakfast, Lunch, Dinner</li>
+                                <li>Car</li>
+                            </ul>
+                        </div>
+                      </div>
+
+                </div>
+
+            </div>
+
+            <!-- right side -->
+            <div class="col-md-10 col-lg-5 ">
+                <!-- form container-->
+                <div class="p-4 bg-danger-subtle rounded me-2 " style="max-width: 448px; margin-left: 5%;">
+                    <h3 class="mb-4 text-center text-primary-emphasis">Book This Tour </h3>
+                    <p class=" text-center px-3" >
+                        Ex optio sequi et quos praesentium in nostrum labore nam rerum iusto aut magni nesciunt?
+                        Quo quidem neque iste expedita est dolo.
+                    </p>
+                    <!-- form -->
+                    <form action="##" method="post"  >
+                        <div class=" p-1 rounded" style="background-color: #BFDAB2; color: #1CB222; border: #1CB222 solid 2px;"> <i class="fa-solid fa-circle-check me-1"></i>Successfully Send message!</div>
+                        <!-- <div class=" p-1 rounded " style="background-color:#FFC0C0; color: #8E0E0E; border: #8E0E0E solid 2px;"> <i class="fa-solid fa-circle-exclamation me-1"></i>Fail to Send</div> -->
+
+                        <div class="my-3">
+                            <input type="text" class="form-control border-0" name="name" id="name" placeholder="Name" required>
+                            <div class="invalid-feedback">
+                              Enter your name.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control border-0" name="email" id="email" placeholder="Email" required>
+                            <div class="invalid-feedback">
+                              Enter  valid email address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control border-0" name="whatsappNO" id="whatsapp" placeholder="whatsapp" required pattern="\d{10}">
+                            <div class="invalid-feedback">
+                              Enter valid 10-digit phone number.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="number" class="form-control border-0" name="phone" id="phone" placeholder="Phone" required pattern="\d{10}">
+                            <div class="invalid-feedback">
+                              Enter valid 10-digit phone number.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control border-0" name="residence" id="residence" placeholder="Residence" required >
+                            <div class="invalid-feedback">
+                              Enter residence.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="number" class="form-control border-0" name="personcount" id="persons" placeholder="No of Persons" required min="1">
+                            <div class="invalid-feedback">
+                              Enter at least 1 person.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="date" class="form-control border-0" name="startdate" id="startDate" placeholder="Start Date" required pattern="\d{2}/\d{2}/\d{4}">
+                              <div class="invalid-feedback">
+                                select an start date.
+                              </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="date" class="form-control border-0" name="enddate" id="endDate" placeholder="End Date" required>
+                            <div class="invalid-feedback">
+                                select an end date.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control border-0" name="message" id="message" rows="3" placeholder="Message" required></textarea>
+                            <div class="invalid-feedback">
+                              Enter  message.
+                            </div>
+                        </div>
+
+                        <div class="text-center mb-1">
+                            <button type="submit" class="btn btn-danger">Book Now</button>
+                          </div>
+
+                     </form>
+
+
+
+
+                </div>
+
+                <!-- google map -->
+                <div>
+                    <div class="ratio ratio-4x3 my-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1323342.0512123897!2d80.05566291408776!3d7.5369585372044865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!5e0!3m2!1sen!2slk!4v1727720802948!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <!-- for gallary -->
+            <div class="container">
+                <h3 class="mb-4  text-primary-emphasis">From our gallery</h3>
+                <div class="d-none d-sm-block">
+                    <div class="row">
+                        <div class=" col-lg-6 col-md-8">
+                            <div class="row mb-3" style="height: 208px; overflow: hidden;" >
+                              <div class="col-md-12">
+                                <img src="img/matara.png" alt="matara" class="img-fluid  w-100" >
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 mb-3" style="height:415px; overflow: hidden;">
+                                <img src="img/colombu.png" alt="colombu" class="img-fluid  w-100 "  >
+                              </div>
+                              <div class="col-md-6">
+                                <div class="row mb-3"  style="height: 208px; overflow: hidden;">
+                                  <div class="col-md-12">
+                                    <img src="img/sigriya.png" alt="sigriya" class="img-fluid  w-100 ">
+                                  </div>
+                                </div>
+                                <div class="row" style="height: 208px; overflow: hidden;">
+                                  <div class="col-md-12" >
+                                    <img src="img/kandy.png" alt="kandy" class="img-fluid  w-100 " >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-3 col-md-4">
+                            <div class="row mb-3" style="height: 445px; overflow: hidden;" >
+                              <div class="col-md-12">
+                                <img src="img/beachgreen.png" alt="beachgreen" class="img-fluid  w-100" >
+                              </div>
+                            </div>
+                            <div class="row" style="height:200px; overflow: hidden;">
+                              <div class="col-md-12">
+                                <img src="img/restorant.png" alt="restorant" class="img-fluid  w-100">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <!-- mobile resp[oncive] -->
+
+                <div class="row d-block d-sm-none">
+                    <div class="col-md-4 mb-3"><img src="img/beachgreen.png" alt="beach" style="width: 100%; height: 300px; border-radius: 25% 0 25% 0;"></div>
+                    <div class="col-md-4 mb-3"><img src="img/sigriya.png" alt="sigriya" style="width: 100%; height: 300px; border-radius: 25% 0 25% 0;"></div>
+                    <div class="col-md-4 mb-3"><img src="img/mobilekandy.png" alt="kandy" style="width: 100%; height: 300px; border-radius: 25% 0 25% 0;"></div>
+                    <div class="col-md-4 mb-3"><img src="img/restorant.png" alt="restorance" style="width: 100%; height: 300px; border-radius: 25% 0 25% 0;"></div>
+                    <div class="col-md-4 mb-3"><img src="img/Jaffna.png" alt="Jaffna" style="width: 100%; height: 300px; border-radius: 25% 0 25% 0;"></div>
+                    <div class="col-md-4 mb-3"><img src="img/mobilebeach.png" alt="beach" style="width: 100%; height: 300px; border-radius: 25% 0 25% 0;"></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+     </div>
+
+
+
+    <!-- footer -->
+     <!-- top part -->
+    <div  class=" bg-white position-relative foot-main p-5 ">
+        <div class="position-absolute white rounded-3 text-center py-1 px-3 bg-white foot-sub">
+                <div class="d-flex ">
+                    <img src="img/Rectangle 13.png" alt="Bird icon representing notifications"  style="width: 150px;height: 150px;" class="d-none d-sm-block">
+                    <div class="ms-3 d-flex flex-column justify-content-center">
+                    <span class="text-primary text-start fw-bold">News Letters</span>
+                        <h5 class="fw-bold text-danger text-nowrap">
+                            Get Our Every Single Notification 
+                        </h5>
+                        <form class="d-flex justify-content-center align-items-center mt-3 pb-2" novalidate>
+                            <input type="email" class="form-control w-75 rounded me-2 border-0 bg-danger-subtle" placeholder="Enter your email here" required>
+                            <button class="btn btn-danger rounded">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            
+        </div>
+        <!-- footer bottom part -->
+        <div class="container  ">
+                    <a class=" text-decoration-none d-none d-sm-block" href="##">
+                    <img class=" mt-3" src="img/Logo.png" alt="logo" style="width: 12%;">
+                    </a>
+                    <!-- for mobile -->
+                    <a class=" text-decoration-none d-block d-sm-none" href="##">
+                        <img class=" mt-3" src="img/Logo.png" alt="logo" style="width: 30%;">
+                    </a>
+            <div class="row align-items-start text-center">
+                <div class=" col-md-5 col-lg-4 text-white">
+                    <div class="text-dark fs-6 mb-3" style="text-align:justify">
+                    At Trezzert, our mission is to empower our guests by providing uniquely personalized travel experiences throughout Sri Lanka.
+                        We believe that travel should be about exploration and personal growth. 
+                        Our dedicated team ensures each journey is thoughtfully curated to meet the specific desires and needs of our clients, 
+                    ensuring every adventure is as unique as our travelers.
+                    </div>
+                    <div class="d-block d-sm-none mb-3">
+                        <h5 class="text-uppercase text-danger fw-bold">
+                            Follow Us
+                        </h5>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/whatsapp.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/facebook.png" alt="facebook" style="width: 30px;height: 30px;"></a>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/linkedin.png" alt="linkedin" style="width: 30px;height: 30px;"></a>
+                        <a href="###"class="me-3 text-dark fs-4"><img src="img/instagram.png" alt="instagram" style="width: 30px;height: 30px;"></a>
+                    </div>
+                    
+                </div>
+                <div class="col-md-7 col-lg-8 text-center">
+                    <div class="row mt-md-5 mt-lg-0">
+                        <div class=" col-md-5 col-lg-4 mb-4 p-1">
+                            <h5 class="text-uppercase text-danger fw-bold">Quick Link</h5>
+                
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="##" class=" text-decoration-none text-dark" >About</a>
+                                </li>
+                                <li>
+                                    <a href="##" class="text-decoration-none text-dark">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="##" class=" text-decoration-none text-dark">Terms and Condition</a>
+                                </li>
+                                <li>
+                                    <a href="##"  class=" text-decoration-none text-dark">Return Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-md-7 col-lg-4 mb-4 mb-md-0">
+                            <h5 class="text-uppercase text-danger fw-bold">Contact</h5>
+                
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-dark text-decoration-none">+94777538775</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" class="text-dark text-decoration-none" title="Mail">info@travel.com</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" class="text-dark text-decoration-none" title="Address"> No 032, main street, Colombo,<br> Sri Lanka.</a>
+                                </li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-md-10 col-lg-4 text-white text-center ms-sm-3 ms-lg-0 d-none d-sm-block">
+                            <h5 class="text-uppercase text-danger fw-bold">Follow Us</h5>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/whatsapp.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/facebook.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/linkedin.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>
+                            <a href="###"class="me-3 text-dark fs-4"><img src="img/instagram.png" alt="whatsapp" style="width: 30px;height: 30px;"></a>  
+                        </div> 
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- border -->
+            <b>
+            <hr class="m-0" style="border:  red solid 2px; "></b>
+        
+            <!-- Section: Copyright -->
+            <section class="pb-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-8 col-lg-6 text-lg-start text-md-start text-sm-center">
+                    <!-- Copyright -->
+                    <div class="py-3 text-dark">
+                    Copyright © 2024 All rights reserved by:
+                        <a class="text-decoration-none text-dark" href="">Travel</a>
+                    </div>
+                    </div>
+                    <!--mobile responcive Grid column -->
+                    <div class="col-md-4 col-lg-6 text-lg-end text-sm-center">
+                        <div class="py-2 text-dark">
+                            Web Developed by 
+                            <a class="text-decoration-none text-dark" href="https://www.apexx.lk/">Apexx Private Limited</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+            
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+   
+  
